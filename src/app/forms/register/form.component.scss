@@ -1,0 +1,23 @@
+.box{
+    border-radius:50px;
+    margin-top: 20px;
+    padding: 50px;
+}
+label{
+    color: #000000;
+}
+.label{
+    margin-top: 15px;
+}
+.buttons{
+    margin-top: 15px;
+}
+.checkbox{
+    margin-top: 10px;
+}
+
+@media (min-width: 768px){
+    .box{
+        margin: 30px 100px;
+    }
+}

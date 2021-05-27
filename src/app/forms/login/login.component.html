@@ -1,0 +1,17 @@
+<form class="box" [formGroup]="myForm" (ngSubmit)="login($event)">
+  <div class="field">
+    <a class="link" routerLink='/form' >Registrarse</a>
+    <label class="label">Correo</label>
+    <div class="control">
+      <input class="input" type="email" placeholder="e.g. alex@example.com" formControlName="email">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Contraseña</label>
+    <div class="control">
+      <input class="input" type="password" placeholder="********" formControlName="password">
+    </div>
+  </div>
+  <button class="button is-primary is-light is-rounded" type="submit" [disabled]="myForm.invalid">Iniciar sesión</button>
+</form>

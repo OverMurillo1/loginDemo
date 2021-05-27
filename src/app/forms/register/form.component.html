@@ -1,0 +1,36 @@
+<div class="box">
+    <form [formGroup]="myForm" (ngSubmit)="register($event)">
+        <a class="link_2" routerLink='/login' >Iniciar Sesion</a>
+        <div class="field">
+            <label for="" class="label">Nombres</label>
+            <div class="control">
+                <input type="text" class="input is-primary is-normal" formControlName="name">
+            </div>
+            <label for="" class="label">Email</label>
+            <div class="control">
+                <input  type="text" class="input is-primary is-normal" formControlName="email">
+                <p *ngIf="myForm.controls.email.errors?.pattern" class="help is-success">El email es invalido</p>
+            </div>
+            <label for="" class="label">Contraseña</label>
+            <div class="control">
+                <input type="password" class="input is-primary is-normal" formControlName="password">
+            </div>
+            <label for="" class="label">Seleccione su genero</label>
+            <div class="select is-primary">
+                <select>
+                    <option value="">Hombre</option>
+                    <option value="">Mujer</option>
+                    <option value="">Otro</option>
+                </select>
+            </div>
+            <br>
+            <label for="" class="checkbox">
+                <input type="checkbox">
+                Esta de acuerdo con los <a href=""><span>Terminos y Condiciones</span></a>
+            </label>
+            <div class="buttons">
+                <button type="submit" class="button is-primary is-light is-rounded" [disabled]="myForm.invalid">Registrarse</button>
+            </div>
+        </div>
+    </form>
+</div>

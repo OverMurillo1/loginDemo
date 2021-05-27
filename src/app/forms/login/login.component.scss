@@ -1,0 +1,16 @@
+.box{
+    border-radius:50px;
+    margin-top: 15px;
+    padding: 50px
+}
+label{
+    margin-top:15px
+}
+.button{
+    margin-top: 15px;
+}
+@media (min-width: 768px){
+    .box{
+        margin: 30px 100px;
+    }
+}

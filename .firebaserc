@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "logindemo-be435": {
+      "hosting": {
+        "login": [
+          "logindemo-be435"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "logindemo-be435"
+  }
+}

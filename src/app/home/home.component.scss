@@ -1,0 +1,21 @@
+.container{
+    /*position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%)*/
+    margin-top:100px;
+}
+.column_1{
+    background-color:#70e1cc;
+}
+.column_2{
+    background-color:#374961;
+}
+@media(min-width:768px){
+    .container{
+        margin: 150px;
+    }
+    .column_2{
+        padding: 20px;
+    }
+}
